@@ -5,6 +5,7 @@
 	<title>Home</title>
 </head>
 <body>
+<<<<<<< HEAD
 <h1>
 	어머니는 짜장면이 싫다고 하셨어
 	야이야이야 그렇게살아가고
@@ -33,6 +34,10 @@
 	그렇게 살아가고
 	그렇게 후회하고
 	
+=======
+<h1>dddddddddddddddd
+	sasasas 123123132313123 ddddddd ddddd
+>>>>>>> refs/remotes/origin/sangwon
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
