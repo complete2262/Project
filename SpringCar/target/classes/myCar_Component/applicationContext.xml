@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+<context:component-scan base-package="myCar_Component"/> <!-- 패키지 안에있는거 다 적용됨 -->
+
+	<!--  M5는 component로 AMG는 xml로 -->
+<!-- <bean id="Dcut" class="myCar_Component.Dcut" lazy-init="true">
+<property name="name" value="Dcut"></property>
+</bean>
+
+<bean id="M5GO1" class="myCar_Component.M5" lazy-init="true">
+<property name="name" value="M5"></property>
+<property name="color" value="white"></property>
+<property name="zeroBack" value="4"></property>
+<property name="m5Handle" ref="Dcut"></property>
+</bean> -->
+
+<bean id="Ccut" class="myCar_Component.Ccut" lazy-init="true">
+<property name="name" value="Ccut"></property>
+<property name="plusSpeed" value="3"></property>
+
+</bean>
+
+<bean id="AMGGO1" class="myCar_Component.AMG" lazy-init="true">
+<constructor-arg value="AMG_GT"/>
+<constructor-arg value="Blue"/>
+<constructor-arg value="3"/>
+<constructor-arg ref="Ccut"/>
+</bean>
+
+</beans>
