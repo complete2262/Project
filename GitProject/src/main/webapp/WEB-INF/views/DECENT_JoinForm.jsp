@@ -77,7 +77,13 @@
 					<div class="invalid-feedback">비밀번호 입력이 잘못되었습니다</div>
 				</div>
 			</div>
-
+			<div class="row">
+			<div class="col-md-6 mb-3">
+				<label for="nickname">닉네임</label> <input type="text" class="form-control"
+					id="ninckname" placeholder="" value="" required="">
+				<div class="invalid-feedback">닉네임 입력이 잘못되었습니다</div>
+			</div>
+			</div>
 			<div class="mb-3">
 				<label for="email">E-MAIL</label>
 				<div class="input-group">
