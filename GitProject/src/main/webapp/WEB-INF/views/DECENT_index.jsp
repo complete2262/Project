@@ -28,20 +28,23 @@
 
   <body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="file:///C:/Users/Haeun/Desktop/startbootstrap-freelancer-gh-pages/index.html#page-top">DECENT</a>
- 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger active" href="file:///C:/Users/Haeun/Desktop/startbootstrap-freelancer-gh-pages/index.html#contact">LOGIN</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+   	<!-- Navigation -->
+	<nav
+		class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase"
+		id="mainNav">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="tomain">DECENT</a><!-- href 자리에 DECENT_index로 가는 ex) tomain .. 리매핑 -->
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item mx-0 mx-lg-1"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger active"
+						href=tologin">LOGIN</a></li><!-- href 자리에 DECENT_login으로 가는 ex) tologin .. 리매핑 -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
 
  <!-- Contact Section -->
        <section id="contact">
