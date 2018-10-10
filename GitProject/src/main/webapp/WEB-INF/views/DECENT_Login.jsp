@@ -47,84 +47,41 @@
 			</div>
 		</div>
 	</nav>
-	<!-- 가입페이지 -->
+	
+	
+	<!-- 로그인폼 -->
+	  <div class="container">
 
-      <div class="container">
-		<br> <br> <br> <Br> <br> <br> <br>
-		<Br>
-
-		<h4 class="mb-3">회원가입</h4>
-		<form class="needs-validation" novalidate="">
-			<div class="row">
-			<div class="col-md-6 mb-3">
-				<label for="id">I D</label> <input type="text" class="form-control"
-					id="id" placeholder="" value="" required="">
-				<div class="invalid-feedback">아이디 입력이 잘못되었습니다</div>
-			</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 mb-3">
-					<label for="password">PASSWORD</label> <input type="text"
-						class="form-control" id="password" placeholder="" value=""
-						required="">
-					<div class="invalid-feedback">비밀번호 입력이 잘못되었습니다</div>
-				</div>
-				<div class="col-md-6 mb-3">
-					<label for="password2">Duplicate confirmation</label> <input
-						type="text" class="form-control" id="password2" placeholder=""
-						value="" required="">
-					<div class="invalid-feedback">비밀번호 입력이 잘못되었습니다</div>
-				</div>
-			</div>
-			<div class="row">
-			<div class="col-md-6 mb-3">
-				<label for="nickname">닉네임</label> <input type="text" class="form-control"
-					id="ninckname" placeholder="" value="" required="">
-				<div class="invalid-feedback">닉네임 입력이 잘못되었습니다</div>
-			</div>
-			</div>
-			<div class="mb-3">
-				<label for="email">E-MAIL</label>
-				<div class="input-group">
-					<div class="input-group-prepend">
-						<input type="text" class="form-control" id="email_id"
-							placeholder="email_id" required=""> <span
-							class="input-group-text">@</span>
-					</div>
-					<input type="text" class="form-control" id="email_site"
-						placeholder="email_site" required="">
-					<div class="invalid-feedback" style="width: 100%;">이메일 입력이
-						잘못되었습니다</div>
-				</div>
-			</div>
-			<div class="row">
-			<div class="col-md-5 mb-3">
-				<label for="interest">INTEREST</label> <select
-					class="custom-select d-block w-100" id="country" required="">
-					<option value="">Choose...</option>
-
-					<option>박보영</option>
-					<option>보영</option>
-					<option>이게 다 보영?</option>
-					<option>그만좀 보영</option>
-					<option>선택할게 안보영?</option>
-					<option>그럼 박보영</option>
-
-				</select>
-				<div class="invalid-feedback"></div>
-			</div>
-			</div>
-			<hr class="mb-4">
-			<div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input"
-					id="yourheart"> <label class="custom-control-label"
-					for="yourheart">얘 진짜 좋아함?</label>
-			</div>
-			<br><br><br>
-			
-				<button class="btn btn-primary btn-lg btn-block" type="submit">가입하러 가즈아아아아</button>
-		</form>
-
+        <div class="row">
+             
+          <div class="col-lg-8 mx-auto">
+    <br><br><br><br><br><br><h3>로그인하셈</h3>
+            <form name="loginRequest" id="loginForm" novalidate="novalidate">
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+               
+                  <label>id</label>
+                  <input class="form-control" id="id" type="text" placeholder="ID" required="required" data-validation-required-message="아이디를 입력해주세요">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Password</label>
+                  <input class="form-control" id="password" type="password" placeholder="PASSWORD" required="required" data-validation-required-message="비밀번호를 입력해주세요">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-s" id="sendMessageButton">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
