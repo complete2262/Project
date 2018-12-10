@@ -8,7 +8,7 @@
 <!DOCTYPE script PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <script type="text/javascript">
 	function fileAttach(){ 
-		fpath = "http://localhost:8090/project/resources/photoUpload/";
+		fpath = "/resources/photoUpload/";
 	    fname = "${filename}";
 	    fcode = fpath + fname;
 	    

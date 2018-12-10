@@ -224,8 +224,7 @@ canvas {
                   <img class="card-img-top" src="resources/images/logo/4.png"
                      alt="Card image cap">
                   <div class="card-body">
-                     <p class="card-text">jQuery (제이쿼리)는 HTML의 클라이언트 사이드 조작을 단순화
-                        하도록 설계된 크로스 플랫폼의 자바스크립트 라이브러리 입니다.</p>
+                     <p class="card-text"> 클라이언트에게 네트워크를 통해 서비스하는 컴퓨터를 의미합니다.</p>
                   </div>
                   <a href="boardList?tag=Server" class="btn btn-primary">Server 글 보기</a>
                </div>
@@ -235,8 +234,7 @@ canvas {
                   <img class="card-img-top" src="resources/images/logo/5.png"
                      alt="Card image cap">
                   <div class="card-body">
-                     <p class="card-text">웹 문서를 만들기 위하여 사용하는 기본적인 프로그래밍 언어/HTML을
-                        보조하는 스타일 시트 입니다.</p>
+                     <p class="card-text">여러 사람이 공유하고 사용할 목적으로 통합 관리되는 정보의 집합입니다. </p>
                   </div>
                   <a href="boardList?tag=Database" class="btn btn-primary">Datebase 글 보기</a>
                </div>

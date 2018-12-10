@@ -110,7 +110,7 @@
                            placeholder="작성자" value="${Identity.nickName}" id="writer"
                            name="writer" maxlength="20" disabled></td>
                         <td><select class="custom-select d-block w-100" id="tag"
-                           name="tag" oninput="majorcheck()" required="">
+                           name="tag" required="">
                               <c:choose>
                                  <c:when test="${param.tag=='Jquery'}">
                                     <option value="Jquery" selected="selected">Jquery</option>

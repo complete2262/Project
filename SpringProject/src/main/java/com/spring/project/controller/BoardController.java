@@ -149,7 +149,7 @@ public class BoardController {
        System.out.println( request.getParameterNames());
      String filename = "";
      String convFilename = "";
-     FileSystemResource uploadDir = new FileSystemResource("C:/Users/compl/Desktop/SpringGit/SpringProject/src/main/webapp/resources/photoUpload/");
+     FileSystemResource uploadDir = new FileSystemResource("/resources/photoUpload/");
      
      MultipartHttpServletRequest multipart = (MultipartHttpServletRequest) request;
      MultipartFile file = multipart.getFile("Filedata");
@@ -312,7 +312,7 @@ public class BoardController {
          bvo.setImage(fName2);
       }      */
       int cnt = bDAO.bUpdate(bvo);
-      if(cnt>0) { mav.setViewName("board/boardListPage"); }
+      if(cnt>0) { mav.setViewName("redirect:boardDetail?id="+bvo.getId()); }
       else {
          mav.setViewName("board/bUpdateFailed");
       }
@@ -377,10 +377,10 @@ public class BoardController {
    
    @RequestMapping(value="/boardDelete")
    public ModelAndView boardDelete(HttpServletRequest request, ModelAndView mav, Pboard bvo) {
-      request.getParameter("tag");
+     String tag = request.getParameter("tag");
       int cnt = bDAO.bDelete(bvo);
       if(cnt>0) {
-         mav.setViewName("board/boardDelete");
+         mav.setViewName("redirect:boardList?tag="+tag);
       }else { mav.setViewName("board/bUpdateFailed"); }
       return mav;
    } // boardDelete

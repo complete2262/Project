@@ -369,7 +369,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="col-md-10">
-								<label for="nam">PASSWORD</label> <input type="password" name="password" 
+								<label for="nam">PASSWORD</label> <input type="password" name="password" style="font-family:Arial;" 
 									class="form-control" id="password" placeholder=""
 									maxlength="16" value="" required="">
 							</div>
