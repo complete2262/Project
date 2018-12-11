@@ -14,7 +14,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    <script src="resources/js/jquery-3.2.1.min.js"> 
 </script>
-
+ 
    <!-- Include all compiled plugins (below), or include individual files as needed -->
    <script src="resources/js/popper.min.js"></script>
    <script src="resources/js/bootstrap-4.0.0.js"></script>
