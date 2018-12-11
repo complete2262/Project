@@ -162,7 +162,7 @@
 <footer class="footer">
       <div class="container">
 		  <div class="text-center col-lg-6 offset-lg-3">
-        <h5>정상원 · 오진욱 · 이하은</h5>
+        <h5>정상원 · 이하은</h5>
             <p>Copyright &copy; 2018 &middot; All Rights Reserved &middot; <a href="#">PDic</a></p>
 			  </div>
       </div>

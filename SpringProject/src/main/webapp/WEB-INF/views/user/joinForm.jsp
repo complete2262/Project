@@ -378,7 +378,7 @@
 						<div class="col-md-6">
 							<div class="col-md-10">
 								<label for="password2">Duplicate confirmation</label> <input
-									type="password" class="form-control" id="checkpw"
+									type="password" class="form-control" id="checkpw" style="font-family:Arial;"
 									placeholder="" value="" required="" oninput="checkPwd()">
 							</div>
 							<!-- 패스워드 확인(oninput 방식) -->
@@ -474,7 +474,7 @@
 		<hr>
 		<div class="row">
 			<div class="text-center col-lg-6 offset-lg-3">
-				<h5>정상원 · 오진욱 · 이하은</h5>
+				<h5>정상원 · 이하은</h5>
 				<p>
 					Copyright &copy; 2018 &middot; All Rights Reserved &middot; <a
 						href="#">PDic</a>
