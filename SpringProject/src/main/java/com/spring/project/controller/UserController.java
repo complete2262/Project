@@ -80,13 +80,13 @@ public class UserController {
 	public ModelAndView userLogin
 	(HttpServletRequest request, ModelAndView mav, Login lvo)  
 			throws ServletException, IOException {
-		String rawPassword = lvo.getPassword();
+		String rawPassword = lvo.getPassword(); // 1234
 		lvo = uDAO.uLogin(lvo);
 		if(lvo==null){
 			mav.setViewName("user/loginFail");
 		}
 		else {
-		String encodedPassword = lvo.getPassword();
+		String encodedPassword = lvo.getPassword(); // 암호화 된 비밀번호
 			if(passwordEncoder.matches(rawPassword, encodedPassword)) {
 				HttpSession session = request.getSession();
 				session.setAttribute("Identity", lvo);
