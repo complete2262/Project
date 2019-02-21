@@ -169,10 +169,10 @@ public class PboardServiceImple implements PboardService {
 		return bDAO.selectOne(ns+".getBridgeList", evo);
 	}
 
-	@Override
+	/*@Override
 	@Transactional
 	public int bridge2Check(int pboard1_id) {
 		return bDAO.selectOne(ns+".getBridge2List", pboard1_id);
-	}
+	}*/
 	
 }

@@ -20,7 +20,7 @@ public interface PboardService {
 	int bUpdate(Pboard bvo);
 	int bDelete(Pboard bvo);
 	int bridgeCheck(Bridge evo);
-	int bridge2Check(int pboard1_id);
+	//int bridge2Check(int pboard1_id);
 	int bridgeInsert(Bridge evo, Pboard bvo); 
 	int bridgeDelete(Bridge evo, Pboard bvo); 
 	int viewCount(Pboard bvo);

@@ -2,7 +2,7 @@
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-
+	<!-- 초기화면 -->
 	<welcome-file-list>
         <welcome-file>/WEB-INF/views/user/main.jsp</welcome-file>
     </welcome-file-list>
@@ -46,7 +46,7 @@
 	</error-page>
 
 
-	<!-- Session유지시간 설정 -->
+	<!-- Session유지시간 설정 (10분)-->
 	<!-- <session-config> <session-timeout>10</session-timeout> </session-config> -->
 
 	<!-- 한글처리 filter -->

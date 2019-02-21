@@ -26,7 +26,7 @@ import com.spring.project.vo.Puser;
 public class UserController {
 
 	@Autowired(required=true)
-	@Qualifier("user")
+	@Qualifier("user") // 해당 serviceImple을 호출하여 객체 자동 생성
 	private PuserService uDAO ;
 	
 	@Autowired
@@ -348,7 +348,7 @@ public class UserController {
 		System.out.println(lvo);
 		/*uDAO.uDeleteSub(lvo);
 		uDAO.uDeleteSub2(lvo);*/
-		int cnt = uDAO.uDelete(uvo, lvo);
+		int cnt = uDAO.uDelete(uvo,lvo);
 		
 		if(cnt>0) {
 			mav.setViewName("user/deleteSuccess");

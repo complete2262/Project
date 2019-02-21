@@ -2,6 +2,7 @@
 <!DOCTYPE mapper 
 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
 <mapper namespace="Puser.Mapper">
 
 	<select id="userLogin" resultType="com.spring.project.vo.Login">
@@ -104,14 +105,7 @@
 		delete puser where user_id=#{user_id}
 	</delete>
 	
-	<!-- <update id="uDeleteSub" parameterType="com.spring.project.vo.Puser">
-		update pboard1 set puser_id= null where user_id=#{user_id}
-	</update>
-	
-	<update id="uDeleteSub2" parameterType="com.spring.project.vo.Puser">
-		update preply1 set puser_id= null where user_id=#{user_id}
-	</update> -->
-
+	<!-- 중복체크 -->
 	<select id="userIdcheck" resultType="java.lang.Integer">
 		SELECT NVL(COUNT(*),0)
 		FROM PUSER WHERE user_id=#{user_id}

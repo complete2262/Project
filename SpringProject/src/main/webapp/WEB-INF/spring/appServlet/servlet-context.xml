@@ -32,6 +32,8 @@
 		<beans:property name="configLocation"
 			value="classpath:/mybatis-config.xml" />
 		3) mappers 폴더내의 모든 폴더의 *Mapper.xml 을 인식하도록 해줌
+		
+		
 		<beans:property name="mapperLocations"
 			value="classpath:/mappers/**/*Mapper.xml" />
 	</beans:bean>
@@ -82,10 +84,10 @@
 	
 
 	<!-- ImageUpLoad 를 위한 MultipartResolver 설정 -->
-	<beans:bean id="multipartResolver"
+	<!-- <beans:bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<beans:property name="maxUploadSize" value="1000000" />
-	</beans:bean>
+	</beans:bean>  -->
 
 
 

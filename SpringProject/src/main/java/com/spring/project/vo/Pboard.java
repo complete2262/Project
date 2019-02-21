@@ -15,7 +15,7 @@ public class Pboard {
 	private String tag;
 	private int choice;
 	private int replyCount;
-	private MultipartFile uploadFile;
+	//private MultipartFile uploadFile;
 
 	
 	public int getChoice() {
@@ -122,11 +122,20 @@ public class Pboard {
 		this.replyCount = replyCount;
 	}
 
+
+
+	@Override
+	public String toString() {
+		return "Pboard [id=" + id + ", puser_id=" + puser_id + ", title=" + title + ", content=" + content + ", cnt="
+				+ cnt + ", regdate=" + regdate + ", tag=" + tag + ", choice=" + choice + ", replyCount=" + replyCount
+				+ "]";
+	}
+
 	
 
 
 
-
+/*
 	public MultipartFile getUploadFile() {
 		return uploadFile;
 	}
@@ -137,15 +146,15 @@ public class Pboard {
 		this.uploadFile = uploadFile;
 	}
 
+*/
 
-
-	@Override
+	/*@Override
 	public String toString() {
 		return "Pboard [id=" + id + ", puser_id=" + puser_id + ", title=" + title + ", content=" + content + ", cnt="
 				+ cnt + ", regdate=" + regdate + ", tag=" + tag + ", choice=" + choice + ", replyCount=" + replyCount
 				+ ", uploadFile=" + uploadFile + "]";
 	}
-
+*/
 
 
 

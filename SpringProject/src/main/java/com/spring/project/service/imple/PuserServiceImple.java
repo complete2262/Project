@@ -15,7 +15,7 @@ import com.spring.project.vo.Page;
 import com.spring.project.vo.Pboard;
 import com.spring.project.vo.Puser;
 
-@Repository("user")
+@Repository("user") //추후 autowired로 controller단에서 호출됨
 public class PuserServiceImple implements PuserService{
 
 	@Inject

@@ -2,8 +2,8 @@ package com.spring.project.vo;
 
 public class Puser {
 
-	private int id;
-	private String user_id;
+	private int id; //index
+	private String user_id;	
 	private String password;
 	private String encryptPassword;
 	private String nickName;
